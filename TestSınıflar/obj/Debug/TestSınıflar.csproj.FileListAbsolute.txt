@@ -1,0 +1,11 @@
+D:\Toplu\uygulamalar\C#Programlama\Projeler\YGS_Hazirlik\TestSınıflar\obj\Debug\TestSınıflar.csproj.CoreCompileInputs.cache
+D:\Toplu\uygulamalar\C#Programlama\Projeler\YGS_Hazirlik\TestSınıflar\bin\Debug\TestSınıflar.dll.config
+D:\Toplu\uygulamalar\C#Programlama\Projeler\YGS_Hazirlik\TestSınıflar\bin\Debug\TestSınıflar.dll
+D:\Toplu\uygulamalar\C#Programlama\Projeler\YGS_Hazirlik\TestSınıflar\bin\Debug\TestSınıflar.pdb
+D:\Toplu\uygulamalar\C#Programlama\Projeler\YGS_Hazirlik\TestSınıflar\bin\Debug\EntityFramework.dll
+D:\Toplu\uygulamalar\C#Programlama\Projeler\YGS_Hazirlik\TestSınıflar\bin\Debug\EntityFramework.SqlServer.dll
+D:\Toplu\uygulamalar\C#Programlama\Projeler\YGS_Hazirlik\TestSınıflar\bin\Debug\EntityFramework.xml
+D:\Toplu\uygulamalar\C#Programlama\Projeler\YGS_Hazirlik\TestSınıflar\bin\Debug\EntityFramework.SqlServer.xml
+D:\Toplu\uygulamalar\C#Programlama\Projeler\YGS_Hazirlik\TestSınıflar\obj\Debug\TestSınıflar.csproj.CopyComplete
+D:\Toplu\uygulamalar\C#Programlama\Projeler\YGS_Hazirlik\TestSınıflar\obj\Debug\TestSınıflar.dll
+D:\Toplu\uygulamalar\C#Programlama\Projeler\YGS_Hazirlik\TestSınıflar\obj\Debug\TestSınıflar.pdb

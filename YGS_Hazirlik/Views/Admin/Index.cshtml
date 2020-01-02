@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<Table_Test>
+<section id="main-content">
+    <section class="wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <!--custom chart start-->
+                @{
+                    if (Model != null)
+                    {
+                        foreach (Table_Test item in Model)
+                        {
+                            <div class="border-head">
+                                <h3>@item.Zaman</h3>
+                            </div>
+                            <div class="custom-bar-chart">
+                                <ul class="y-axis">
+                                    <li><span>100</span></li>
+                                    <li><span>80</span></li>
+                                    <li><span>60</span></li>
+                                    <li><span>40</span></li>
+                                    <li><span>20</span></li>
+                                    <li><span>0</span></li>
+                                </ul>
+                                @foreach (Table_KategorikOran item2 in ViewBag.KategorikOran)
+                                {
+                                    if (item2.Testid == item.Testid)
+                                    {
+                                        <div class="bar">
+                                            <div class="value tooltips" data-original-title="@item2.Oran%" data-toggle="tooltip" data-placement="top">@item2.Oran%</div>
+                                            <div class="container "><div style="margin-top:300px;"> <div style="display:flex;font-size:xx-small">@item2.Table_Kategoriler.Adi</div></div></div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        }
+                    }
+                }
+                <!--custom chart end-->
+            </div>
+        </div>
+    </section>
+</section>
+
+
+

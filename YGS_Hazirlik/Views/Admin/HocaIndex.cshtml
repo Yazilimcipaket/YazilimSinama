@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "HocaIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section id="container" class="">
+    <section id="main-content">
+        <section class="wrapper">
+            <div class="row">
+                <div class="col-lg-6">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            Soru Ekle
+                        </header>
+                        <div class="panel-body">
+                            <form role="form" method="post" action="/Admin/SoruEkle" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label>Konu</label>
+                                    <select class="form-control input-lg m-bot15" name="Kategoriid">
+                                        @foreach (Table_Kategoriler item in ViewBag.kategoriler)
+                                        {
+                                            <option value="@item.Kategoriid">@item.Adi</option>
+                                        }
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Soru</label>
+                                    <input type="text" name="soru" class="form-control" id="exampleInputPassword1" placeholder="Soru">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">A Şıkkı</label>
+                                    <input type="text" name="A" class="form-control" id="exampleInputPassword1" placeholder="A Şıkkı">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">B Şıkkı</label>
+                                    <input type="text" name="B" class="form-control" id="exampleInputPassword1" placeholder="B Şıkkı">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">C Şıkkı</label>
+                                    <input type="text" name="C" class="form-control" id="exampleInputPassword1" placeholder="C Şıkkı">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">D Şıkkı</label>
+                                    <input type="text" name="D" class="form-control" id="exampleInputPassword1" placeholder="D Şıkkı">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">E Şıkkı</label>
+                                    <input type="text" name="E" class="form-control" id="exampleInputPassword1" placeholder="E Şıkkı">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Dogru Şık</label>
+                                    <input type="text" name="DogruCevap" class="form-control" id="exampleInputPassword1" placeholder="Dogru Şık">
+                                </div>
+                                <input type="hidden" name="Kullaniciid" value="@ViewBag.kullanici"/>
+                                <div class="form-group">
+                                    <label for="exampleInputFile">Resim Ekle</label>
+                                    <input type="file" id="exampleInputFile" name="fileUpload">
+                                    <p class="help-block">Soruya Resim Ekle</p>
+                                </div>
+                                <button type="submit" class="btn btn-info">Kaydet</button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </section>
+</section>
